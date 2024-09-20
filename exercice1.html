@@ -1,63 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon beau puzzle</title>
 </head>
+
 <body>
 
-  <center> <h2>Mon beau puzzle</h2> </center>
+    <h2>Mon beau puzzle</h2>
 
-    
     <table>
         <tr>
-            <td colspan="2"> Fusionnée </td>
-            <td rowspan="2"> Fusionnée </td>
+            <td colspan="2" id="rouge"></td>
+            <td rowspan="2" id="vert"></td>
 
         </tr>
         <tr>
-            <td rowspan="2"> Fusionnée </td>
-            <td>R2C2</td>
-           
+            <td rowspan="2" id="yellow"></td>
+            <td id="black">   </td>
+
         </tr>
         <tr>
-            <td colspan="2"> Fusionnée </td>
-           
+            <td colspan="2" id="blue"></td>
+
         </tr>
-    
+
     </table>
 
 
     <style>
+        h2 {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+        }
 
-img {
+        img {
             max-width: 50px;
         }
 
-         table, td, th {
-            
-            border: 0.5px solid rgb(0, 0, 0);
+        table,
+        td {
+
+            border: 0.5px solid black;
             border-collapse: collapse;
         }
 
+        tr {
+            height: 100px;
+        }
+
         td {
-  border: 1px solid rgb(160 160 160);
-  padding: 8px 10px;
-}
+            border: 1px solid black;
+            padding: 8px 10px;
+            width: 90px;
+        }
 
 
 
-tr:nth-of-type(even) {
-  background-color: #ff0000f0;
-}
+        #rouge {
+            background-color: red;
+        }
 
-        table { margin: auto; /*Permet de centrer la tableau*/ }
-    
+        #vert {
+            background-color: green;
+        }
 
-        
+        #yellow {
+            background-color: yellow;
+        }
+
+        #blue {
+            background-color: blue;
+        }
+
+        #black {
+            background-color: black;
+        }
+
+        table {
+            margin: auto;
+            /*Permet de centrer la tableau*/
+        }
     </style>
 
 
 </body>
+
 </html>
